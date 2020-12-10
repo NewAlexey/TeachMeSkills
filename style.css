@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+body {
+	font-family: "Raleway";
+	height: 1000px;
+	background: linear-gradient(to top, #f5f5f5, #808080);
+}
+
+.container {
+	width: 1150px;
+	margin: 0 auto;
+}
+
+.div-line-one {
+	height: 100px;
+	margin-top: 100px;
+	display: flex;
+}
+
+.div-homework-1 {
+    width: 350px;
+}
+
+.span-with-homework {
+	font-size: 35px;
+	margin: 0;
+	cursor: default;
+}
+
+.fa-class {
+    padding-left: 20px;
+}
+
+.p-with-information {
+	font-size: 14px;
+	cursor: default;
+}
+
+.div-homework-2 {
+    margin: 0 50px;
+    width: 300px;
+}
+
+a:link,
+a:active,
+a:visited {
+	text-decoration: none;
+	color: black;
+}

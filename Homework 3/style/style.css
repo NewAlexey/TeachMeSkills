@@ -5,26 +5,23 @@ body {
 	background-color: grey;
 }
 
-.main-container {
+.container {
 	margin: 0 auto;
 	text-align: center;
-	height: 595px;
 	width: 1400px;
+}
+
+.container-main {
+	height: 595px;
 	background-color: #fff;
 }
 
-.section-container {
-	margin: 0 auto;
-	text-align: center;
+.container-section {
 	height: 326px;
-	width: 1400px;
 }
 
-.footer-container {
-	margin: 0 auto;
-	text-align: center;
+.container-footer {
 	height: 101px;
-	width: 1400px;
 }
 
 .heading {
@@ -62,7 +59,9 @@ body {
 	height: 70px;
 	border-radius: 50%;
 	border: 1px solid #e72424;
-	line-height: 85px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	margin: 0 auto;
 }
 
@@ -71,7 +70,9 @@ body {
 	height: 70px;
 	border-radius: 50%;
 	border: 1px solid #e72424;
-	line-height: 94px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	margin: 0 auto;
 }
 

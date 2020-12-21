@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600;700;800&display=swap");
+
+body {
+    background: #e5e5e5;
+}
+
+.container {
+    margin: 0 auto;
+    text-align: center;
+    width: 1440px;
+}
+
+.container-header {
+    height: 768px;
+    background: center url(../img/img-header.png);
+    background-size: cover;
+}
+
+.container-konstruct {
+    width: 102px;
+    margin: 0 auto;
+    padding-top: 42px;
+    display: flex;
+}
+
+.header-konstruct-p {
+    color: #fff;
+    font-family: "Bebas Neue";
+    font-size: 28px;
+}
+
+.header-triangle {
+    border: 20px solid transparent;
+    border-right: 20px solid #00a4e5;
+    transform: scale(0.48);
+    position: relative;
+    top: -8px;
+    margin-left: -20px;
+}
+
+.letter-t {
+    margin-left: -9px;
+}
+
+.header-h1 {
+    color: #fff;
+    font-family: "Bebas Neue";
+    font-size: 59px;
+    padding: 298px 0 2px 40px;
+    letter-spacing: 5.50937px;
+}
+
+.header-p {
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+}
+
+.header-scroll-down {
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 11px;
+    color: #fff;
+    padding-top: 227px;
+    letter-spacing: 3.7px;
+}

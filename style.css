@@ -17,7 +17,7 @@ body {
 	display: flex;
 }
 
-.div-homework-1 {
+.div-homework-right-and-left {
     width: 350px;
 }
 
@@ -36,7 +36,7 @@ body {
 	cursor: default;
 }
 
-.div-homework-2 {
+.div-homework-middle {
     margin: 0 50px;
     width: 300px;
 }

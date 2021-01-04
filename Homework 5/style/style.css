@@ -11,7 +11,7 @@ body {
 .container {
   margin: 0 auto;
   text-align: center;
-  width: 1440px;
+  max-width: 1440px;
 }
 
 .container-header {
@@ -86,11 +86,11 @@ body {
 .container-nav {
   height: 65px;
   background: #fff;
-  border: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .container-nav .container-nav-content {
-  width: 940px;
+  max-width: 940px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -178,7 +178,7 @@ body {
 }
 
 .container-section-about .section-about-content {
-  width: 940px;
+  max-width: 940px;
   margin: 0 auto;
   display: block;
 }
@@ -316,7 +316,7 @@ body {
 
 .container-section-services .services-content {
   margin: 0 auto;
-  width: 940px;
+  max-width: 940px;
   display: block;
 }
 
@@ -472,10 +472,10 @@ body {
 }
 
 .container-section-get-in-touch {
-  width: 1440px;
+  max-width: 1440px;
   height: 498px;
   background: url(../img/img-getintouch.png);
-  background-size: contain;
+  background-size: cover;
 }
 
 .container-section-get-in-touch .get-in-touch-header {
@@ -527,7 +527,7 @@ body {
 }
 
 .container-section-newsletter {
-  width: 1440px;
+  max-width: 1440px;
   height: 100px;
   background: #171819;
   display: -webkit-box;
@@ -545,6 +545,12 @@ body {
   width: 300px;
   height: 30px;
   text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container-section-newsletter .section-newsletter-signup .section-newsletter-header {
@@ -622,7 +628,7 @@ body {
 }
 
 .container-footer .footer-content {
-  width: 940px;
+  max-width: 940px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -689,26 +695,22 @@ body {
 
 .container-footer .footer-content .footer-links {
   width: 115px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.85px;
+  font-family: "Open Sans";
 }
 
 .container-footer .footer-content .footer-links .footer-links-header {
-  font-family: "Open Sans";
   font-weight: 400;
-  font-size: 11px;
-  letter-spacing: 0.85px;
   color: #fff;
-  text-transform: uppercase;
   height: 30px;
 }
 
 .container-footer .footer-content .footer-links ul {
-  font-family: "Open Sans";
   font-weight: 600;
-  font-size: 11px;
   line-height: 25px;
-  letter-spacing: 0.846154px;
   color: #fff;
-  text-transform: uppercase;
 }
 
 .container-footer .footer-content .footer-links ul a:hover,
@@ -720,12 +722,12 @@ body {
 
 .container-footer .footer-content .footer-faqs-terms {
   width: 90px;
+  font-size: 11px;
 }
 
 .container-footer .footer-content .footer-faqs-terms ul {
   font-family: "Open Sans";
   font-weight: 600;
-  font-size: 11px;
   line-height: 25px;
   letter-spacing: 0.846154px;
   color: #fff;
@@ -746,12 +748,12 @@ body {
 
 .container-footer .footer-content .footer-blog-news {
   width: 120px;
+  font-size: 11px;
 }
 
 .container-footer .footer-content .footer-blog-news ul {
   font-family: "Open Sans";
   font-weight: 600;
-  font-size: 11px;
   line-height: 25px;
   letter-spacing: 0.846154px;
   color: #fff;
@@ -767,12 +769,12 @@ body {
 
 .container-footer .footer-content .footer-contact-us {
   width: 187px;
+  font-size: 11px;
 }
 
 .container-footer .footer-content .footer-contact-us .footer-contact-us-header {
   font-family: "Open Sans";
   font-weight: 400;
-  font-size: 11px;
   letter-spacing: 0.85px;
   color: #fff;
   text-transform: uppercase;
@@ -782,7 +784,6 @@ body {
 .container-footer .footer-content .footer-contact-us .footer-adress {
   font-family: "Open Sans";
   font-weight: 400;
-  font-size: 11px;
   line-height: 17px;
   letter-spacing: 0.846154px;
   color: #fff;
@@ -796,7 +797,6 @@ body {
 .container-footer .footer-content .footer-contact-us .footer-tel .footer-tel-link {
   font-family: "Open Sans";
   font-weight: 400;
-  font-size: 11px;
   line-height: 17px;
   letter-spacing: 0.846154px;
   color: #fff;
@@ -810,7 +810,6 @@ body {
 .container-footer .footer-content .footer-contact-us .footer-email-link {
   font-family: "Open Sans";
   font-weight: 400;
-  font-size: 11px;
   line-height: 17px;
   letter-spacing: 0.846154px;
   color: #fff;
@@ -821,10 +820,7 @@ body {
   text-decoration: none;
 }
 
-.container-footer .footer-content .footer-social {
-  color: #fff;
-  width: 87px;
-  height: 50px;
+.container-footer .footer-content .footer-ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -834,11 +830,13 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  width: 87px;
+  height: 50px;
 }
 
-.container-footer .footer-content .footer-social a:hover,
-.container-footer .footer-content .footer-social a:link,
-.container-footer .footer-content .footer-social a:visited {
+.container-footer .footer-content a:hover,
+.container-footer .footer-content a:link,
+.container-footer .footer-content a:visited {
   color: #fff;
   text-decoration: none;
 }
@@ -846,10 +844,11 @@ body {
 .container-copyright {
   height: 60px;
   background-color: #171819;
+  font-size: 11px;
 }
 
 .container-copyright .copyright-content {
-  width: 940px;
+  max-width: 940px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -871,7 +870,163 @@ body {
 .container-copyright .copyright-content .copyright-p {
   font-family: "Open Sans";
   font-weight: 400;
-  font-size: 11px;
   letter-spacing: 0.846154px;
   color: #fff;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    max-width: 1000px;
+  }
+  .container .header-h1 {
+    font-size: 49px;
+    padding: 298px 0 4px 0px;
+  }
+  .container .header-p {
+    font-size: 14px;
+  }
+  .container .container-nav-content {
+    max-width: 670px;
+  }
+  .container .header-scroll-down {
+    padding-top: 235px;
+  }
+  .container .container-section-about {
+    height: 445px;
+  }
+  .container .container-section-about .section-about-content {
+    max-width: 670px;
+  }
+  .container .container-section-about .section-about-content .section-about-div-with-information {
+    height: 185px;
+  }
+  .container .container-section-about .section-about-content .section-about-div-with-information .section-about-div-with-p {
+    max-width: 320px;
+  }
+  .container .container-section-about .section-about-content .section-about-div-with-information .section-about-first-p {
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+  .container .container-section-about .section-about-content .section-about-div-with-information .section-about-second-p {
+    font-size: 10px;
+    line-height: 18px;
+  }
+  .container .container-section-about .section-about-content .section-about-div-with-information .section-about-images {
+    max-width: 320px;
+  }
+  .container .container-section-about .section-about-content .section-about-div-with-information .section-about-images .section-about-image-first {
+    max-width: 94px;
+    height: 150px;
+  }
+  .container .container-section-about .section-about-content .section-about-div-with-information .section-about-images .section-about-image-second {
+    max-width: 94px;
+    height: 150px;
+  }
+  .container .container-section-about .section-about-content .section-about-div-with-information .section-about-images .section-about-image-third {
+    max-width: 94px;
+    height: 150px;
+  }
+  .container .container-section-about .section-about-content .section-about-div-with-information .section-about-images .images-text {
+    font-size: 16px;
+    padding: 13px 0 0 9px;
+  }
+  .container .container-section-services {
+    height: 365px;
+  }
+  .container .container-section-services .services-content {
+    max-width: 670px;
+  }
+  .container .container-section-services .services-content .services-title .services-with-line .section-services-line {
+    width: 148px;
+  }
+  .container .container-section-services .services-content .services-title .services-with-line .services-p-text {
+    font-size: 10px;
+  }
+  .container .container-section-services .services-content .services-with-blocks {
+    max-width: 670px;
+  }
+  .container .container-section-services .services-content .services-with-blocks .services-block {
+    max-width: 217px;
+    height: 243px;
+  }
+  .container .container-section-services .services-content .services-with-blocks .services-block .services-content-in-block {
+    max-width: 193px;
+    height: 215px;
+    padding: 7px 0 0 17px;
+  }
+  .container .container-section-services .services-content .services-with-blocks .services-block .services-content-in-block .services-img-1 {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  .container .container-section-services .services-content .services-with-blocks .services-block .services-content-in-block .services-img-2 {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  .container .container-section-services .services-content .services-with-blocks .services-block .services-content-in-block .services-img-3 {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  .container .container-section-services .services-content .services-with-blocks .services-block .services-content-in-block .services-header-in-blocks {
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .container .container-section-services .services-content .services-with-blocks .services-block .services-content-in-block .services-text-in-blocks {
+    font-size: 10px;
+    line-height: 17px;
+  }
+  .container .container-section-get-in-touch {
+    max-width: 1000px;
+    height: 346px;
+    background-size: cover;
+  }
+  .container .container-section-get-in-touch .get-in-touch-header {
+    font-size: 20px;
+    padding: 100px 0 12px 0;
+  }
+  .container .container-section-newsletter {
+    max-width: 1000px;
+  }
+  .container .container-section-newsletter .section-newsletter-signup {
+    max-width: 250px;
+  }
+  .container .container-section-newsletter .section-newsletter-signup .section-newsletter-header {
+    font-size: 19px;
+    width: 256px;
+  }
+  .container .container-section-newsletter .section-newsletter-input {
+    height: 30px;
+  }
+  .container .container-section-newsletter .section-newsletter-button {
+    height: 30px;
+  }
+  .container .footer-content {
+    max-width: 670px;
+  }
+  .container .footer-content .footer-company .footer-company-name {
+    font-size: 9px;
+  }
+  .container .footer-content .footer-company .footer-konstruct-p {
+    font-size: 24px;
+  }
+  .container .footer-content .footer-company .footer-information {
+    width: 230px;
+    font-size: 9px;
+    line-height: 17px;
+  }
+  .container .footer-content .footer-links {
+    font-size: 9px;
+  }
+  .container .footer-content .footer-faqs-terms {
+    font-size: 9px;
+  }
+  .container .footer-content .footer-blog-news {
+    font-size: 9px;
+  }
+  .container .footer-content .footer-contact-us {
+    font-size: 9px;
+  }
+  .container .copyright-content {
+    max-width: 670px;
+    font-size: 9px;
+  }
 }

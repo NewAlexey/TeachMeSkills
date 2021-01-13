@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Пример слайдера</title>
+        <link href="style/reset.css" rel="stylesheet" />
+        <link href="style/fonts.css" rel="stylesheet" />
+        <link href="style/style.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" />
+        <link />
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="wrapper_nav">
+                <a href="#" target="_blank"><i class="fab fa-vk icon-vk"></i></a>
+                <div class="nav_aside__icons">
+                    <a href="#" target="_blank"><i class="fas fa-home"></i></a>
+                    <a href="#" target="_blank"><i class="fas fa-clipboard-list"></i></a>
+                    <a href="#" target="_blank"><i class="fas fa-user-friends"></i></a>
+                    <a href="#" target="_blank"><i class="fas fa-envelope"></i></a>
+                    <a href="#" target="_blank"><i class="fas fa-play"></i></a>
+                    <a href="#" target="_blank"><i class="fas fa-signal"></i></a>
+                    <a href="#" target="_blank"><i class="fas fa-cog"></i></a>
+                </div>
+                <div class="button r" id="button-1">
+                    <input type="checkbox" class="checkbox" />
+                    <div class="knobs"></div>
+                    <div class="layer"></div>
+                </div>
+            </div>
+            <div class="wrapper_body">
+                <div class="wrapper_body__content">
+                    <div class="body_content__nav">
+                        <div class="nav_search">
+                            <p class="nav_search_header">Statistics</p>
+                            <div class="nav_search__block">
+                                <div class="nav_search__loupe">
+                                    <img src="./img/img_seatch.svg" alt="" />
+                                </div>
+                                <input type="text" placeholder="Search" class="nav_search__input" />
+                            </div>
+                            <img src="./img/img_notification.svg" alt="notification" />
+                        </div>
+                        <div class="nav_user">
+                            <p>Anya</p>
+                            <img src="./img/anya_logo.svg" alt="logo" class="nav_logo_user" />
+                            <img src="./img/logo_arrow.svg" alt="arrow" />
+                        </div>
+                    </div>
+                    <div class="body_content__friends">
+                        <div class="content_inside">
+                            <div class="content_inside__top">
+                                <div class="inside_top_information">
+                                    <h2>Friends</h2>
+                                </div>
+                                <div class="inside_top_dots">
+                                    <div class="dots"></div>
+                                    <div class="dots"></div>
+                                    <div class="dots"></div>
+                                </div>
+                            </div>
+                            <div class="content_inside__bot">
+                                <div class="inside_bot_information">271 people</div>
+                                <div class="inside_bot_contents">
+                                    <p class="inside_bot_percents">+ 0,7%</p>
+                                    <img src="./img/arrow-up.svg" alt="arrow" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body_content__visitors">
+                        <div class="content_inside">
+                            <div class="content_inside__top">
+                                <div class="inside_top_information">
+                                    <h2>Unique visitors</h2>
+                                </div>
+                                <div class="inside_top_dots">
+                                    <div class="dots"></div>
+                                    <div class="dots"></div>
+                                    <div class="dots"></div>
+                                </div>
+                            </div>
+                            <div class="content_inside__bot">
+                                <div class="inside_bot_information">69 people</div>
+                                <div class="inside_bot_contents">
+                                    <p class="inside_bot_percents">- 1,7%</p>
+                                    <img src="./img/arrow-down.svg" alt="arrow" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body_content__followers">
+                        <div class="content_inside">
+                            <div class="content_inside__top">
+                                <div class="inside_top_information">
+                                    <h2>Followers</h2>
+                                </div>
+                                <div class="inside_top_dots">
+                                    <div class="dots"></div>
+                                    <div class="dots"></div>
+                                    <div class="dots"></div>
+                                </div>
+                            </div>
+                            <div class="content_inside__bot">
+                                <div class="inside_bot_information">288 people</div>
+                                <div class="inside_bot_contents">
+                                    <p class="inside_bot_percents">+ 1%</p>
+                                    <img src="./img/arrow-up.svg" alt="arrow" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body_content__reach">
+                        <div class="body_content__reach-audience">
+                            <div class="reach-audience_content">
+                                <div class="reach-audience_header">
+                                    <h2 class="reach_h2">Audience reach</h2>
+                                    <div class="audience_header__data">
+                                        <p class="reach_date">31/01/2020 - 06/02/2020</p>
+                                        <img src="./img/img_date.svg" alt="" class="audience_img" />
+                                        <div class="reach_checkbox">
+                                            <input type="checkbox" class="custom-checkbox_1" id="total" name="total" value="yes" />
+                                            <label for="total" class="label_purple">Total</label>
+                                            <input type="checkbox" class="custom-checkbox_2" id="followers" name="followers" value="yes" />
+                                            <label for="followers" class="label_pink">Followers</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="./img/graph_audience.png" alt="graph" class="audience_graph" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body_content__reach-device">
+                            <div class="reach-device_content">
+                                <h2 class="reach_h2">Reach by device</h2>
+                                <div class="reach-device_schelude">
+                                    <div class="schelude__graph">
+                                        <img src="./img/ellipse_purple.svg" alt="purple-ellipse" class="schelude_purple-ellipse" />
+                                        <img src="./img/ellipse_pink.svg" alt="pink-ellipse" class="schelude_pink-ellipse" />
+                                        <p class="schelude_purple-ellipse__amount">86%</p>
+                                        <p class="schelude_pink-ellipse__amount">14%</p>
+                                    </div>
+                                    <div class="schelude__data">
+                                        <div class="schelude_data__views">
+                                            <div class="data_square_pink"></div>
+                                            <div class="data_list">Desktop</div>
+                                        </div>
+                                        <div class="schelude_data__views data_views__padding">
+                                            <div class="data_square_purple"></div>
+                                            <div class="data_list">Mobile views</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body_content__info">
+                        <div class="body_content__gender-age">
+                            <div class="gender-age_content">
+                                <div class="gender-age_header">
+                                    <h2 class="gender_h2">Gender / Age</h2>
+                                    <div class="gender-age_header__data">
+                                        <div class="data_square_pink"></div>
+                                        <div class="data_list data_padding">women</div>
+                                        <div class="data_square_purple"></div>
+                                        <div class="data_list">men</div>
+                                    </div>
+                                </div>
+                                <img src="./img/graph_gender-age.png" alt="graph" class="gender-age_graph" />
+                                <div class="gender-age_div_lines">
+                                    <img src="./img/graph_gender-age_line.svg" alt="line" class="gender-age_lines" />
+                                    <img src="./img/graph_gender-age_line.svg" alt="line" class="gender-age_lines" />
+                                    <img src="./img/graph_gender-age_line.svg" alt="line" class="gender-age_lines" />
+                                    <img src="./img/graph_gender-age_line.svg" alt="line" class="gender-age_lines" />
+                                    <img src="./img/graph_gender-age_line.svg" alt="line" class="gender-age_lines" />
+                                    <img src="./img/graph_gender-age_line.svg" alt="line" class="gender-age_lines" />
+                                    <img src="./img/graph_gender-age_line.svg" alt="line" class="gender-age_lines" />
+                                    <img src="./img/graph_gender-age_line.svg" alt="line" class="gender-age_lines" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body_content__geo">
+                            <div class="geo_content">
+                                <div class="geo_header">
+                                    <h2 class="geo_h2">Geo</h2>
+                                    <div class="geo_header__data">
+                                        <p class="geo_country">Country</p>
+                                        <p class="geo_city">City</p>
+                                    </div>
+                                </div>
+                                <div class="geo_graph">
+                                    <div>
+                                        <div>
+                                            <p class="geo_country">Russia</p>
+                                            <p class="geo_city">94%</p>
+                                        </div>
+                                        <img src="./img/geo_russia.svg" alt="bar" class="geo_bar_padding" />
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <p class="geo_country">China</p>
+                                            <p class="geo_city">0,26%</p>
+                                        </div>
+                                        <img src="./img/geo_china.svg" alt="bar" class="geo_bar_padding" />
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <p class="geo_country">Ukraine</p>
+                                            <p class="geo_city">0,20%</p>
+                                        </div>
+                                        <img src="./img/geo_ukraine.svg" alt="bar" class="geo_bar_padding" />
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <p class="geo_country">USA</p>
+                                            <p class="geo_city">0,20%</p>
+                                        </div>
+                                        <img src="./img/geo_usa.svg" alt="bar" class="geo_bar_padding" />
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <p class="geo_country">Mongolia</p>
+                                            <p class="geo_city">0,13%</p>
+                                        </div>
+                                        <img src="./img/geo_mongolia.svg" alt="bar" class="geo_bar_padding" />
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <p class="geo_country">Other</p>
+                                            <p class="geo_city">1,37%</p>
+                                        </div>
+                                        <img src="./img/geo_other.svg" alt="bar" class="geo_bar_padding" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

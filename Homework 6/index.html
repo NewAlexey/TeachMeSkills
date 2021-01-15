@@ -2,27 +2,28 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Пример слайдера</title>
+        <title>Layout via Grids</title>
         <link href="style/reset.css" rel="stylesheet" />
         <link href="style/fonts.css" rel="stylesheet" />
         <link href="style/style.css" rel="stylesheet" />
+        <link href="style/style-light.css" rel="stylesheet" id="theme_css" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" />
         <link />
     </head>
-    <body>
+    <body class="body">
         <div class="wrapper">
-            <div class="wrapper_nav">
+            <div class="wrapper_aside">
                 <a href="#" target="_blank"><i class="fab fa-vk icon-vk"></i></a>
-                <div class="nav_aside__icons">
-                    <a href="#" target="_blank"><i class="fas fa-home"></i></a>
-                    <a href="#" target="_blank"><i class="fas fa-clipboard-list"></i></a>
-                    <a href="#" target="_blank"><i class="fas fa-user-friends"></i></a>
-                    <a href="#" target="_blank"><i class="fas fa-envelope"></i></a>
-                    <a href="#" target="_blank"><i class="fas fa-play"></i></a>
-                    <a href="#" target="_blank"><i class="fas fa-signal"></i></a>
-                    <a href="#" target="_blank"><i class="fas fa-cog"></i></a>
-                </div>
-                <div class="button r" id="button-1">
+                <nav class="nav_aside__icons">
+                    <a href="#" class="nav_link-1"><i class="fas fa-home"></i></a>
+                    <a href="#" class="nav_link-2"><i class="fas fa-clipboard-list"></i></a>
+                    <a href="#" class="nav_link-3"><i class="fas fa-user-friends"></i></a>
+                    <a href="#" class="nav_link-4"><i class="fas fa-envelope"></i></a>
+                    <a href="#" class="nav_link-5"><i class="fas fa-play"></i></a>
+                    <a href="#" class="nav_link-6"><i class="fas fa-signal"></i></a>
+                    <a href="#" class="nav_link-7"><i class="fas fa-cog"></i></a>
+                </nav>
+                <div class="button r" id="button">
                     <input type="checkbox" class="checkbox" />
                     <div class="knobs"></div>
                     <div class="layer"></div>
@@ -42,9 +43,9 @@
                             <img src="./img/img_notification.svg" alt="notification" />
                         </div>
                         <div class="nav_user">
-                            <p>Anya</p>
-                            <img src="./img/anya_logo.svg" alt="logo" class="nav_logo_user" />
-                            <img src="./img/logo_arrow.svg" alt="arrow" />
+                            <p class="nav_pointer">Anya</p>
+                            <img src="./img/anya_logo.png" alt="logo" class="nav_logo_user" />
+                            <img src="./img/logo_arrow.svg" alt="arrow" class="nav_pointer" />
                         </div>
                     </div>
                     <div class="body_content__friends">
@@ -63,7 +64,7 @@
                                 <div class="inside_bot_information">271 people</div>
                                 <div class="inside_bot_contents">
                                     <p class="inside_bot_percents">+ 0,7%</p>
-                                    <img src="./img/arrow-up.svg" alt="arrow" />
+                                    <img src="./img/arrow/arrow-up.svg" alt="arrow" />
                                 </div>
                             </div>
                         </div>
@@ -84,7 +85,7 @@
                                 <div class="inside_bot_information">69 people</div>
                                 <div class="inside_bot_contents">
                                     <p class="inside_bot_percents">- 1,7%</p>
-                                    <img src="./img/arrow-down.svg" alt="arrow" />
+                                    <img src="./img/arrow/arrow-down.svg" alt="arrow" />
                                 </div>
                             </div>
                         </div>
@@ -105,7 +106,7 @@
                                 <div class="inside_bot_information">288 people</div>
                                 <div class="inside_bot_contents">
                                     <p class="inside_bot_percents">+ 1%</p>
-                                    <img src="./img/arrow-up.svg" alt="arrow" />
+                                    <img src="./img/arrow/arrow-up.svg" alt="arrow" />
                                 </div>
                             </div>
                         </div>
@@ -126,8 +127,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div>
-                                    <img src="./img/graph_audience.png" alt="graph" class="audience_graph" />
+                                <div class="audience_graph"> 
+                                    <!-- <img src="./img/graph_audience-dark.png" alt="graph" class="audience_graph" /> -->
                                 </div>
                             </div>
                         </div>
@@ -167,16 +168,16 @@
                                         <div class="data_list">men</div>
                                     </div>
                                 </div>
-                                <img src="./img/graph_gender-age.png" alt="graph" class="gender-age_graph" />
-                                <div class="gender-age_div_lines">
-                                    <img src="./img/graph_gender-age_line.svg" alt="line" class="gender-age_lines" />
-                                    <img src="./img/graph_gender-age_line.svg" alt="line" class="gender-age_lines" />
-                                    <img src="./img/graph_gender-age_line.svg" alt="line" class="gender-age_lines" />
-                                    <img src="./img/graph_gender-age_line.svg" alt="line" class="gender-age_lines" />
-                                    <img src="./img/graph_gender-age_line.svg" alt="line" class="gender-age_lines" />
-                                    <img src="./img/graph_gender-age_line.svg" alt="line" class="gender-age_lines" />
-                                    <img src="./img/graph_gender-age_line.svg" alt="line" class="gender-age_lines" />
-                                    <img src="./img/graph_gender-age_line.svg" alt="line" class="gender-age_lines" />
+                                <img src="./img/graph_gender-age_light.png" id="graph_1" alt="graph" class="gender-age_graph" />
+                                <div class="gender-age_div_lines">                                    
+                                    <div class="gender-age_lines"></div>
+                                    <div class="gender-age_lines"></div>
+                                    <div class="gender-age_lines"></div>
+                                    <div class="gender-age_lines"></div>
+                                    <div class="gender-age_lines"></div>
+                                    <div class="gender-age_lines"></div>
+                                    <div class="gender-age_lines"></div>
+                                    <div class="gender-age_lines"></div>
                                 </div>
                             </div>
                         </div>
@@ -195,42 +196,42 @@
                                             <p class="geo_country">Russia</p>
                                             <p class="geo_city">94%</p>
                                         </div>
-                                        <img src="./img/geo_russia.svg" alt="bar" class="geo_bar_padding" />
+                                        <img src="./img/geo/geo_russia.svg" alt="bar" class="geo_bar_padding" />
                                     </div>
                                     <div>
                                         <div>
                                             <p class="geo_country">China</p>
                                             <p class="geo_city">0,26%</p>
                                         </div>
-                                        <img src="./img/geo_china.svg" alt="bar" class="geo_bar_padding" />
+                                        <img src="./img/geo/geo_china.svg" alt="bar" class="geo_bar_padding" />
                                     </div>
                                     <div>
                                         <div>
                                             <p class="geo_country">Ukraine</p>
                                             <p class="geo_city">0,20%</p>
                                         </div>
-                                        <img src="./img/geo_ukraine.svg" alt="bar" class="geo_bar_padding" />
+                                        <img src="./img/geo/geo_ukraine.svg" alt="bar" class="geo_bar_padding" />
                                     </div>
                                     <div>
                                         <div>
                                             <p class="geo_country">USA</p>
                                             <p class="geo_city">0,20%</p>
                                         </div>
-                                        <img src="./img/geo_usa.svg" alt="bar" class="geo_bar_padding" />
+                                        <img src="./img/geo/geo_usa.svg" alt="bar" class="geo_bar_padding" />
                                     </div>
                                     <div>
                                         <div>
                                             <p class="geo_country">Mongolia</p>
                                             <p class="geo_city">0,13%</p>
                                         </div>
-                                        <img src="./img/geo_mongolia.svg" alt="bar" class="geo_bar_padding" />
+                                        <img src="./img/geo/geo_mongolia.svg" alt="bar" class="geo_bar_padding" />
                                     </div>
                                     <div>
                                         <div>
                                             <p class="geo_country">Other</p>
                                             <p class="geo_city">1,37%</p>
                                         </div>
-                                        <img src="./img/geo_other.svg" alt="bar" class="geo_bar_padding" />
+                                        <img src="./img/geo/geo_other.svg" alt="bar" class="geo_bar_padding" />
                                     </div>
                                 </div>
                             </div>
@@ -239,5 +240,6 @@
                 </div>
             </div>
         </div>
+        <script src="./script/change_theme.js"></script>
     </body>
 </html>

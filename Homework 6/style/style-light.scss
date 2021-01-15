@@ -1,0 +1,242 @@
+body {
+    background-color: whitesmoke;
+}
+
+.wrapper {
+    .wrapper_aside {
+        background-color: #fdfdff;
+        border: 1px solid #ebebeb;
+
+        .nav_aside__icons {
+            color: #dfe6f1;
+
+            .nav_link-1:link,
+            .nav_link-1:visited,
+            .nav_link-2:link,
+            .nav_link-2:visited,
+            .nav_link-3:link,
+            .nav_link-3:visited,
+            .nav_link-4:link,
+            .nav_link-4:visited,
+            .nav_link-5:link,
+            .nav_link-5:visited,
+            .nav_link-6:link,
+            .nav_link-6:visited,
+            .nav_link-7:link,
+            .nav_link-7:visited {
+                color: #dfe6f1;
+                text-decoration: none;
+            }
+
+            .nav_link-1:hover,
+            .nav_link-1:focus,
+            .nav_link-2:hover,
+            .nav_link-2:focus,
+            .nav_link-3:hover,
+            .nav_link-3:focus,
+            .nav_link-4:hover,
+            .nav_link-4:focus,
+            .nav_link-5:hover,
+            .nav_link-5:focus,
+            .nav_link-6:hover,
+            .nav_link-6:focus,
+            .nav_link-7:hover,
+            .nav_link-7:focus {
+                color: #7f7fd5;
+            }
+        }
+
+        .layer {
+            background-color: #EFF3F9;
+        }
+
+        #button .knobs:before {
+            border: 4px solid #7f7fd5;
+            background-color: #7f7fd5;
+        }
+
+        #button .checkbox:checked + .knobs:before {
+            border-color: #eff3f9;
+        }
+
+        #button .checkbox:checked ~ .layer {
+            background-color: #7f7fd5;
+        }
+    }
+
+    .wrapper_body {
+        background-color: #eff3f9;
+
+        .wrapper_body__content {
+            .body_content__nav {
+                .nav_search {
+                    .nav_search_header {
+                        color: #4f4f4f;
+                    }
+
+                    .nav_search__block {
+                        .nav_search__loupe {
+                            border-left: 1px solid #ebebeb;
+                            border-top: 1px solid #ebebeb;
+                            border-bottom: 1px solid #ebebeb;
+                            background-color: #fdfdff;
+                        }
+
+                        .nav_search__input {
+                            border-right: 1px solid #ebebeb;
+                            border-top: 1px solid #ebebeb;
+                            border-bottom: 1px solid #ebebeb;
+                            border-left: 0px;
+                            background-color: #fdfdff;
+                            color: #979797;
+                        }
+                    }
+                }
+
+                .nav_user > p {
+                    color: #4f4f4f;
+                }
+            }
+
+            .body_content__friends,
+            .body_content__visitors,
+            .body_content__followers {
+                background-color: #fdfdff;
+                border: 1px solid #ebebeb;
+
+                .content_inside {
+                    .content_inside__top {
+                        .inside_top_information {
+                            color: #4f4f4f;
+                        }
+
+                        .inside_top_dots {
+                            .dots {
+                                background-color: #979797;
+                            }
+                        }
+                    }
+
+                    .content_inside__bot {
+                        .inside_bot_information {
+                            color: #4f4f4f;
+                        }
+                    }
+                }
+            }
+
+            .body_content__reach {
+                .body_content__reach-audience {
+                    background-color: #fdfdff;
+                    border: 1px solid #ebebeb;
+
+                    .reach-audience_content {
+                        .reach-audience_header {
+                            color: #4f4f4f;
+                        }
+
+                        .audience_graph {
+                            background-image: url(../img/graph_audience-light.png);
+                            height: 143px;
+                            margin-top: 27px;
+                        }
+                    }
+                }
+
+                .body_content__reach-device {
+                    background-color: #fdfdff;
+                    border: 1px solid #ebebeb;
+
+                    .reach-device_content {
+                        .reach_h2 {
+                            color: #4f4f4f;
+                        }
+
+                        .reach-device_schelude {
+                            .schelude__graph {
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .schelude__data {
+                .schelude_data__views {
+                    .data_square_pink {
+                        background-color: #e786d7;
+                    }
+                    .data_list {
+                        color: #4f4f4f;
+                    }
+
+                    .data_square_purple {
+                        background-color: #7f7fd5;
+                    }
+                }
+            }
+
+            .body_content__info {
+                .body_content__gender-age {
+                    background-color: #fdfdff;
+                    border: 1px solid #ebebeb;
+
+                    .gender-age_content {
+                        .gender-age_header {
+                            .gender_h2 {
+                                color: #4f4f4f;
+                            }
+
+                            .gender-age_header__data {
+                                .data_square_pink {
+                                    background-color: #e786d7;
+                                }
+
+                                .data_list {
+                                    color: #4f4f4f;
+                                }
+
+                                .data_square_purple {
+                                    background-color: #7f7fd5;
+                                }
+                            }
+                        }
+
+                        .gender-age_div_lines {
+                            .gender-age_lines {
+                                background-image: url(../img/graph_gender-age_line_light.svg);
+                            }
+                        }
+                    }
+                }
+
+                .body_content__geo {
+                    background-color: #fdfdff;
+                    border: 1px solid #ebebeb;
+
+                    .geo_content {
+                        .geo_header {
+                            color: #4f4f4f;
+
+                            .geo_header__data {
+                                .geo_city {
+                                    color: #979797;
+                                }
+                            }
+                        }
+
+                        .geo_graph {
+                            .geo_country {
+                                color: #4f4f4f;
+                            }
+
+                            .geo_city {
+                                color: #979797;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

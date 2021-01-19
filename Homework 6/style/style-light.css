@@ -126,9 +126,7 @@ body {
 }
 
 .wrapper .wrapper_body .wrapper_body__content .body_content__reach .body_content__reach-audience .reach-audience_content .audience_graph {
-  background-image: url(../img/graph_audience-light.png);
-  height: 143px;
-  margin-top: 27px;
+  background-image: url(../img/light-theme/graph_audience-light.png);
 }
 
 .wrapper .wrapper_body .wrapper_body__content .body_content__reach .body_content__reach-device {
@@ -177,8 +175,12 @@ body {
   background-color: #7f7fd5;
 }
 
+.wrapper .wrapper_body .wrapper_body__content .body_content__info .body_content__gender-age .gender-age_content .gender-age_graph {
+  background-image: url(../img/light-theme/graph_gender-age_light.png);
+}
+
 .wrapper .wrapper_body .wrapper_body__content .body_content__info .body_content__gender-age .gender-age_content .gender-age_div_lines .gender-age_lines {
-  background-image: url(../img/graph_gender-age_line_light.svg);
+  background-image: url(../img/light-theme/graph_gender-age_line_light.svg);
 }
 
 .wrapper .wrapper_body .wrapper_body__content .body_content__info .body_content__geo {
@@ -200,4 +202,28 @@ body {
 
 .wrapper .wrapper_body .wrapper_body__content .body_content__info .body_content__geo .geo_content .geo_graph .geo_city {
   color: #979797;
+}
+
+.wrapper .wrapper_body .wrapper_body__content .body_content__info .body_content__geo .geo_content .geo_img_russia {
+  background-image: url(../img/light-theme/geo_russia_light.svg);
+}
+
+.wrapper .wrapper_body .wrapper_body__content .body_content__info .body_content__geo .geo_content .geo_img_china {
+  background-image: url(../img/light-theme/geo_china_light.svg);
+}
+
+.wrapper .wrapper_body .wrapper_body__content .body_content__info .body_content__geo .geo_content .geo_img_ukraine {
+  background-image: url(../img/light-theme/geo_ukraine_light.svg);
+}
+
+.wrapper .wrapper_body .wrapper_body__content .body_content__info .body_content__geo .geo_content .geo_img_usa {
+  background-image: url(../img/light-theme/geo_usa_light.svg);
+}
+
+.wrapper .wrapper_body .wrapper_body__content .body_content__info .body_content__geo .geo_content .geo_img_mongolia {
+  background-image: url(../img/light-theme/geo_mongolia_light.svg);
+}
+
+.wrapper .wrapper_body .wrapper_body__content .body_content__info .body_content__geo .geo_content .geo_img_other {
+  background-image: url(../img/light-theme/geo_other_light.svg);
 }

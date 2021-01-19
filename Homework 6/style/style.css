@@ -24,9 +24,13 @@
 }
 
 .wrapper .wrapper_aside .nav_aside__icons {
+  height: 495px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   font-size: 28px;
+  position: relative;
+  bottom: 240px;
 }
 
 .wrapper .wrapper_aside .nav_aside__icons .nav_link-1,
@@ -82,6 +86,7 @@
   height: 33px;
   margin-bottom: 46px;
   overflow: hidden;
+  top: 603px;
 }
 
 .wrapper .wrapper_aside .button.r,
@@ -332,6 +337,13 @@
   margin: 25px 25px 16px 25px;
 }
 
+.wrapper .wrapper_body .wrapper_body__content .body_content__reach .body_content__reach-audience .reach-audience_content .audience_graph {
+  background-size: cover;
+  height: 145px;
+  width: 718px;
+  margin-top: 27px;
+}
+
 .wrapper .wrapper_body .wrapper_body__content .body_content__reach .body_content__reach-audience .reach-audience_content .reach-audience_header {
   display: flex;
   justify-content: space-between;
@@ -571,7 +583,10 @@
 }
 
 .wrapper .wrapper_body .wrapper_body__content .body_content__info .body_content__gender-age .gender-age_content .gender-age_graph {
-  padding-top: 27px;
+  margin-top: 27px;
+  width: 634px;
+  height: 167px;
+  background-size: cover;
 }
 
 .wrapper .wrapper_body .wrapper_body__content .body_content__info .body_content__gender-age .gender-age_content .gender-age_div_lines {
@@ -585,7 +600,7 @@
 }
 
 .wrapper .wrapper_body .wrapper_body__content .body_content__info .body_content__gender-age .gender-age_content .gender-age_div_lines > div {
-  bottom: 40px;
+  bottom: 38px;
 }
 
 .wrapper .wrapper_body .wrapper_body__content .body_content__info .body_content__gender-age .gender-age_content .gender-age_div_lines > div:nth-child(1) {
@@ -617,8 +632,8 @@
 }
 
 .wrapper .wrapper_body .wrapper_body__content .body_content__info .body_content__gender-age .gender-age_content .gender-age_div_lines > div:nth-child(8) {
-  bottom: 41px;
-  left: 630px;
+  bottom: 38px;
+  left: 632px;
 }
 
 .wrapper .wrapper_body .wrapper_body__content .body_content__info .body_content__geo {
@@ -685,5 +700,200 @@
 }
 
 .wrapper .wrapper_body .wrapper_body__content .body_content__info .body_content__geo .geo_content .geo_bar_padding {
-  padding-top: 11px;
+  margin-top: 11px;
+  height: 10px;
+}
+
+@media (max-width: 1024px) {
+  body {
+    width: 770px;
+    margin: 0 auto;
+  }
+  .wrapper {
+    max-height: 1380px;
+    grid-template-columns: 7.6fr 92.3fr;
+    margin: 0;
+  }
+  .wrapper .wrapper_aside {
+    justify-content: end;
+  }
+  .wrapper .wrapper_aside .icon-vk {
+    padding-top: 24px;
+  }
+  .wrapper .wrapper_aside .nav_aside__icons {
+    position: sticky;
+    top: 0px;
+    margin-top: 20px;
+  }
+  .wrapper .wrapper_aside .button {
+    top: 30px;
+  }
+  .wrapper .wrapper_body .wrapper_body__content {
+    grid-template-areas: "nav" "friends" "visitors" "followers" "reach" "info";
+    grid-template-rows: 52px 110px 110px 110px;
+    grid-template-columns: 635px;
+    gap: 2vh;
+    justify-items: center;
+    margin: 20px 30px;
+  }
+  .wrapper .wrapper_body .wrapper_body__content .body_content__nav .nav_search {
+    width: 500px;
+  }
+  .wrapper .wrapper_body .wrapper_body__content .body_content__nav .nav_user {
+    width: 135px;
+  }
+  .wrapper .wrapper_body .wrapper_body__content .body_content__friends,
+  .wrapper .wrapper_body .wrapper_body__content .body_content__visitors,
+  .wrapper .wrapper_body .wrapper_body__content .body_content__followers {
+    width: 300px;
+  }
+  .wrapper .wrapper_body .wrapper_body__content .body_content__friends .content_inside,
+  .wrapper .wrapper_body .wrapper_body__content .body_content__visitors .content_inside,
+  .wrapper .wrapper_body .wrapper_body__content .body_content__followers .content_inside {
+    margin: 18px 18px;
+    height: 69px;
+  }
+  .wrapper .wrapper_body .wrapper_body__content .body_content__reach {
+    grid-template-areas: "reach-audience" "reach-device";
+    grid-row-gap: 2vh;
+    grid-template-rows: 1fr 0.94fr;
+    justify-items: center;
+    grid-column-gap: 0;
+  }
+  .wrapper .wrapper_body .wrapper_body__content .body_content__reach .body_content__reach-audience {
+    width: 635px;
+  }
+  .wrapper .wrapper_body .wrapper_body__content .body_content__reach .body_content__reach-audience .reach-audience_content .audience_graph {
+    background-size: cover;
+    height: 120px;
+    width: 600px;
+    margin-top: 27px;
+  }
+  .wrapper .wrapper_body .wrapper_body__content .body_content__reach .body_content__reach-device .reach-device_content .reach_h2 {
+    display: flex;
+    justify-content: center;
+  }
+  .wrapper .wrapper_body .wrapper_body__content .body_content__reach .body_content__reach-device .reach-device_content .reach-device_schelude .schelude__graph {
+    width: 155px;
+  }
+  .wrapper .wrapper_body .wrapper_body__content .body_content__reach .body_content__reach-device .reach-device_content .reach-device_schelude .schelude__graph .schelude_purple-ellipse {
+    padding-top: 20px;
+  }
+  .wrapper .wrapper_body .wrapper_body__content .schelude__data {
+    padding-top: 25px;
+  }
+  .wrapper .wrapper_body .wrapper_body__content .body_content__info {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "gender-age" "geo";
+    grid-row-gap: 2vh;
+    justify-items: center;
+  }
+  .wrapper .wrapper_body .wrapper_body__content .body_content__info .body_content__gender-age .gender-age_content .gender-age_header {
+    margin-bottom: 20px;
+  }
+  .wrapper .wrapper_body .wrapper_body__content .body_content__info .body_content__gender-age .gender-age_content .gender-age_graph {
+    padding-top: 27px;
+    width: 600px;
+    height: 120px;
+    background-size: cover;
+  }
+  .wrapper .wrapper_body .wrapper_body__content .body_content__info .body_content__gender-age .gender-age_content .gender-age_div_lines {
+    position: relative;
+  }
+  .wrapper .wrapper_body .wrapper_body__content .body_content__info .body_content__gender-age .gender-age_content .gender-age_div_lines .gender-age_lines {
+    position: absolute;
+    height: 114px;
+    width: 2px;
+  }
+  .wrapper .wrapper_body .wrapper_body__content .body_content__info .body_content__gender-age .gender-age_content .gender-age_div_lines > div {
+    bottom: 23px;
+  }
+  .wrapper .wrapper_body .wrapper_body__content .body_content__info .body_content__gender-age .gender-age_content .gender-age_div_lines > div:nth-child(1) {
+    left: 126px;
+  }
+  .wrapper .wrapper_body .wrapper_body__content .body_content__info .body_content__gender-age .gender-age_content .gender-age_div_lines > div:nth-child(2) {
+    left: 193px;
+  }
+  .wrapper .wrapper_body .wrapper_body__content .body_content__info .body_content__gender-age .gender-age_content .gender-age_div_lines > div:nth-child(3) {
+    left: 259px;
+  }
+  .wrapper .wrapper_body .wrapper_body__content .body_content__info .body_content__gender-age .gender-age_content .gender-age_div_lines > div:nth-child(4) {
+    left: 326px;
+  }
+  .wrapper .wrapper_body .wrapper_body__content .body_content__info .body_content__gender-age .gender-age_content .gender-age_div_lines > div:nth-child(5) {
+    left: 393px;
+  }
+  .wrapper .wrapper_body .wrapper_body__content .body_content__info .body_content__gender-age .gender-age_content .gender-age_div_lines > div:nth-child(6) {
+    left: 459px;
+  }
+  .wrapper .wrapper_body .wrapper_body__content .body_content__info .body_content__gender-age .gender-age_content .gender-age_div_lines > div:nth-child(7) {
+    left: 529px;
+  }
+  .wrapper .wrapper_body .wrapper_body__content .body_content__info .body_content__gender-age .gender-age_content .gender-age_div_lines > div:nth-child(8) {
+    bottom: 23px;
+    left: 598px;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    width: 680px;
+  }
+  .wrapper {
+    max-height: 1380px;
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+  .wrapper .wrapper_body {
+    border-radius: 20px;
+  }
+  .wrapper .wrapper_aside {
+    flex-direction: unset;
+    justify-content: unset;
+    border-radius: 20px;
+  }
+  .wrapper .wrapper_aside .icon-vk {
+    padding-top: 0;
+    margin-left: 30px;
+  }
+  .wrapper .wrapper_aside .nav_aside__icons {
+    flex-direction: unset;
+    width: 380px;
+    justify-content: space-between;
+    margin-left: 70px;
+    height: 50px;
+    position: inherit;
+    margin-top: -15px;
+  }
+  .wrapper .wrapper_aside .nav_aside__icons .nav_link-1:focus::before,
+  .wrapper .wrapper_aside .nav_aside__icons .nav_link-1:hover::before,
+  .wrapper .wrapper_aside .nav_aside__icons .nav_link-2:focus::before,
+  .wrapper .wrapper_aside .nav_aside__icons .nav_link-2:hover::before,
+  .wrapper .wrapper_aside .nav_aside__icons .nav_link-3:focus::before,
+  .wrapper .wrapper_aside .nav_aside__icons .nav_link-3:hover::before,
+  .wrapper .wrapper_aside .nav_aside__icons .nav_link-4:focus::before,
+  .wrapper .wrapper_aside .nav_aside__icons .nav_link-4:hover::before,
+  .wrapper .wrapper_aside .nav_aside__icons .nav_link-5:focus::before,
+  .wrapper .wrapper_aside .nav_aside__icons .nav_link-5:hover::before,
+  .wrapper .wrapper_aside .nav_aside__icons .nav_link-6:focus::before,
+  .wrapper .wrapper_aside .nav_aside__icons .nav_link-6:hover::before,
+  .wrapper .wrapper_aside .nav_aside__icons .nav_link-7:focus::before,
+  .wrapper .wrapper_aside .nav_aside__icons .nav_link-7:hover::before {
+    content: "";
+    height: 0;
+    width: 30px;
+    position: absolute;
+    border: 2px solid #7f7fd5;
+    border-radius: 0 0 3px 3px;
+    background-color: #7f7fd5;
+    padding: 0 6px;
+    right: -8px;
+    bottom: 26px;
+    cursor: default;
+  }
+  .wrapper .wrapper_aside .button {
+    margin-top: -15px;
+    margin-left: 60px;
+  }
 }

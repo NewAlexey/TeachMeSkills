@@ -136,9 +136,7 @@ body {
                         }
 
                         .audience_graph {
-                            background-image: url(../img/graph_audience-light.png);
-                            height: 143px;
-                            margin-top: 27px;
+                            background-image: url(../img/light-theme/graph_audience-light.png);
                         }
                     }
                 }
@@ -202,9 +200,13 @@ body {
                             }
                         }
 
+                        .gender-age_graph {
+                            background-image: url(../img/light-theme/graph_gender-age_light.png);
+                        }
+
                         .gender-age_div_lines {
                             .gender-age_lines {
-                                background-image: url(../img/graph_gender-age_line_light.svg);
+                                background-image: url(../img/light-theme/graph_gender-age_line_light.svg);
                             }
                         }
                     }
@@ -233,6 +235,30 @@ body {
                             .geo_city {
                                 color: #979797;
                             }
+                        }
+                        
+                        .geo_img_russia {
+                            background-image: url(../img/light-theme/geo_russia_light.svg);
+                        }
+
+                        .geo_img_china {
+                            background-image: url(../img/light-theme/geo_china_light.svg);
+                        }
+
+                        .geo_img_ukraine {
+                            background-image: url(../img/light-theme/geo_ukraine_light.svg);
+                        }
+
+                        .geo_img_usa {
+                            background-image: url(../img/light-theme/geo_usa_light.svg);
+                        }
+
+                        .geo_img_mongolia {
+                            background-image: url(../img/light-theme/geo_mongolia_light.svg);
+                        }
+
+                        .geo_img_other {
+                            background-image: url(../img/light-theme/geo_other_light.svg);
                         }
                     }
                 }

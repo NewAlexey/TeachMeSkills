@@ -52,7 +52,7 @@ body {
 }
 
 .wrapper .wrapper_aside #button .checkbox:checked + .knobs:before {
-  border-color: #eff3f9;
+  border-color: #EFF3F9;
 }
 
 .wrapper .wrapper_aside #button .checkbox:checked ~ .layer {
